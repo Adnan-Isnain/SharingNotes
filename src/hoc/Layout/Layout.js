@@ -27,10 +27,12 @@ const Layout = (props) => {
             {/* Toolbar untuk bagian atas --> Memasukkan 2 variable --> Toogle Click dan Auth*/}
             <Toolbar 
                 toggleHandler={() => ToggleHandler("showMenu")} 
+                Logout={props.onLogout} 
             />
             <SideDrawer 
                     open={configSite["showMenu"]} 
-                    close={() => closeToggleHandler("showMenu")} 
+                    close={() => closeToggleHandler("showMenu")}
+                    Logout={props.onLogout} 
             />
             <Wrapper 
                 toggleHandler={() => ToggleHandler("showMenu")} 

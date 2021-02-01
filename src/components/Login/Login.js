@@ -14,7 +14,7 @@ const login = (props) => {
                 <h2>SIGN IN / SIGN UP</h2>
                 <h3>ISI SEMBARANG EMAIL/PASSWORD</h3>
                 <Profile className={styles.Profile}/>
-                <form>
+                <form onSubmit={props.onLogin}>
                     <div className={styles.Input}>
                         <div>
                         <label htmlFor="email"><b>Email</b></label>
@@ -25,7 +25,7 @@ const login = (props) => {
                             <input type="password" name="password" placeholder="Enter Password" required/>
                         </div>
                         <div>
-                            <button id={styles.Submit} onClick={props.onLogin}>Sign In</button>
+                            <button id={styles.Submit}>Sign In</button>
                         </div>
                         <div>
                             <button id={styles.Register}>Register</button>

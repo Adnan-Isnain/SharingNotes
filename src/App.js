@@ -8,6 +8,8 @@ import NewNote from './components/NewNote/NewNote';
 import Note from './containers/Note/Note';
 import EditNote from './components/EditNote/EditNote';
 import Login from './components/Login/Login'
+import Logout from './components/Logout/Logout'
+// import Loading from './components/Loading/Loading';
 
 class App extends Component {
     state = {
@@ -105,14 +107,14 @@ class App extends Component {
 
     if(this.state.isAuth){
       routes = (
-        <Layout>
+        <Layout onLogout={LogoutHandler}>
           <Switch>
             <Route path="/home" render={() => (<Cards notes={this.state.notes} onRemove={removeNote} />)} />
             <Route path="/about" exact component={About}/>
             <Route path="/new-note" exact render={() => (<NewNote onAdd={addNote}/>)} />
             <Route path="/note/:id" exact render={(props) => (<Note note={this.state.notes} {...props} />)}/>
             <Route path="/note/edit/:id" exact render={() => (<EditNote onEdit={editNote}/>)} />
-            <Route path="/logout" exact render={LogoutHandler} />
+            <Route path="/logout" exact render={() => <Logout onLogout={LogoutHandler}/>} />
             <Redirect to="/home" />
           </Switch>
         </Layout>

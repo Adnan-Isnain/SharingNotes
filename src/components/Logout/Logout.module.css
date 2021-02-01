@@ -1,0 +1,12 @@
+.Logout {
+  font-family: "Yusei Magic", sans-serif;
+  position: fixed;
+  top: 20%;
+  z-index: 200;
+}
+img.SadIcon {
+  width: 20%;
+  height: 20%;
+  background-color: chartreuse;
+  border-radius: 200px;
+}

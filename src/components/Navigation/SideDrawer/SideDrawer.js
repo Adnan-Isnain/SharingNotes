@@ -37,18 +37,25 @@ const sideDrawer = (props) => {
                     <li><DraftsIcon id={styles.Icon}/><NavLink to="/#">DRAFTS</NavLink></li>
                     <li>
                         <div className={styles.Group}>
-                            <Profile margin={"90px 0 0 35px"}/>
+                            <Profile margin={"70px 0 0 35px"}/>
                             <h4>ADNAN ISNAIN N</h4>
                             <NavLink to="/new-note">
                                 <Button 
                                     variant="contained" 
                                     color="secondary" 
-                                    style={{width: '200px', fontFamily: 'inherit'}}
+                                    style={{width: '200px', fontFamily: 'inherit', margin:'10px 0'}}
                                     // onClick={() => props.clicked()}
                                 >
                                     NEW NOTE
                                 </Button>
                             </NavLink>
+                            <Button 
+                                    variant="contained"  
+                                    style={{width: '200px', fontFamily: 'inherit', marginLeft:'10px'}}
+                                    onClick={props.Logout}
+                                >
+                                    LOGOUT
+                                </Button>
                         </div>
                     </li>
                 </ul>

@@ -50,7 +50,7 @@ const Toolbar = (props) => {
                         <SearchIcon />
                     </IconButton>
                 </Paper>
-                <NavigationItems />
+                <NavigationItems LogoutHandler={props.Logout}/>
             </nav>
         </header>
     );
