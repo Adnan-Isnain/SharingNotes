@@ -1,0 +1,54 @@
+.Toolbar {
+  height: 56px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #ffdc00;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+  z-index: 90;
+}
+
+.Toolbar nav {
+  height: 100%;
+}
+
+.AppName {
+  height: 120%;
+  display: flex;
+}
+
+.AppName #Title {
+  font-family: "Yusei Magic", sans-serif;
+}
+
+nav {
+  display: flex;
+}
+
+nav .search-notes {
+  max-width: 20%;
+}
+
+.hamIcon {
+  display: none;
+}
+
+@media (max-width: 499px) {
+  .hamIcon {
+    display: block;
+  }
+  .DesktopOnly,
+  .AppName img {
+    display: none;
+  }
+  .AppName {
+    /* font-family: "Josefin Sans", sans-serif; */
+    justify-content: right;
+    margin-top: 5px;
+  }
+}

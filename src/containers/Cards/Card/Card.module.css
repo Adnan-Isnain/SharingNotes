@@ -1,0 +1,54 @@
+.Card {
+  text-align: left;
+  padding: 10px 20px;
+  margin: 30px 50px;
+  box-sizing: border-box;
+  border: black solid 2px;
+  overflow-x: hidden;
+  border-radius: 10px;
+  box-shadow: 5px 10px;
+  position: relative;
+}
+
+.Note #MoreIcon {
+  text-align: right;
+}
+
+.Content {
+  margin-top: -20px;
+}
+
+.Content h2 {
+  margin-top: inherit;
+}
+
+.Content h3 {
+  margin-top: -15px;
+}
+
+.Content p {
+  text-align: left;
+}
+
+.Content a {
+  color: black;
+}
+
+#FlagsIcon {
+  right: 0;
+  font-weight: 200px;
+}
+
+content .Card .Action {
+  margin: 0 30px;
+}
+
+a.Read {
+  color: black;
+}
+
+@media (min-width: 500px) {
+  .Content {
+    margin-top: -40px;
+  }
+}

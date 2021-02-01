@@ -1,0 +1,55 @@
+.SideDrawer {
+  position: fixed;
+  width: 280px;
+  max-width: 70%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 200;
+  background-color: white;
+  padding: 32px 12%;
+  box-sizing: border-box;
+  transition: transform 0.3s ease-out;
+  font-family: "Acme", sans-serif;
+}
+
+@media (min-width: 500px) {
+  .SideDrawer {
+    display: none;
+  }
+}
+
+.Open {
+  transform: translateX(0);
+}
+
+.Close {
+  transform: translateX(-100%);
+}
+
+.Logo {
+  height: 11%;
+  margin-bottom: 32px;
+  display: block;
+}
+
+ul.List {
+  list-style: none;
+  font-size: 19px;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-start;
+  margin: 0;
+  padding: 0;
+}
+
+ul.List a {
+  text-decoration: none;
+  color: #f50057;
+  vertical-align: top;
+  margin-left: 10px;
+}
+
+.Group {
+  margin-left: -25px;
+}

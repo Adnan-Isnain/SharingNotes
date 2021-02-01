@@ -1,0 +1,19 @@
+.NoteDrawer {
+  position: absolute;
+  z-index: 200;
+  right: 10px;
+  top: 50px;
+  box-sizing: border-box;
+  /* border: #f50057 1px solid; */
+  padding: 10px 15px;
+  border-radius: 5px;
+  background: #fff;
+}
+
+.Close {
+  display: none;
+}
+
+.Open {
+  display: grid;
+}

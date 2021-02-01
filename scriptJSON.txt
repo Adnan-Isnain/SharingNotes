@@ -1,0 +1,9 @@
+const runJSON = (O) => {
+  for(x in O){
+    if(typeof O[x] === "object"){
+      runJSON(O[x])  
+    } else{
+      console.log(O[x]);
+    }
+  }
+}

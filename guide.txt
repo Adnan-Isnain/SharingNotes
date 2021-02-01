@@ -1,0 +1,6 @@
+Before starting my portofolio, Do:
+1. npm install
+2. npm start
+
+     SHARING NOTES APP
+- ADNAN ISNAIN NURUSSALAM -

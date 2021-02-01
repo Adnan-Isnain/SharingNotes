@@ -1,0 +1,6 @@
+.Profile img {
+  width: 120px;
+  height: 120px;
+  display: flex;
+  flex-flow: row;
+}

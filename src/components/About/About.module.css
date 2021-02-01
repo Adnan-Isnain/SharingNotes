@@ -1,0 +1,48 @@
+.Container {
+  overflow-x: hidden;
+  padding: 0 20px;
+}
+
+.Jumbotron {
+  padding: 50px 15px 30px;
+  margin-top: 0;
+  margin: 0 -20px 0;
+  /* padding: 20px 15px; */
+  background-color: rgb(250, 165, 86);
+}
+
+.Jumbotron img {
+  width: 200px;
+  border-radius: 800px;
+  background-color: #666;
+}
+
+.Jumbotron h1 {
+  font-size: 40px;
+}
+
+.About hr {
+  width: 40%;
+}
+.Container .Col {
+  width: 50%;
+  padding: 0 10px;
+  display: table-cell;
+  text-align: justify;
+}
+
+@media (max-width: 499px) {
+  .Jumbotron h1 {
+    font-size: 20px;
+  }
+
+  .Jumbotron p {
+    font-size: 12px;
+  }
+  .Container .Col {
+    width: 100%;
+    padding: 0 10px;
+    display: block;
+    text-align: justify;
+  }
+}

@@ -1,0 +1,14 @@
+.Square {
+  position: fixed;
+  z-index: 150;
+  background-color: #555;
+  width: 700px;
+  height: 700px;
+  margin: 20px auto;
+}
+
+@media (max-width: 499px) {
+  .Square {
+    display: none;
+  }
+}
