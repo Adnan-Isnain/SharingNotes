@@ -5,7 +5,6 @@ import Square from './Square/Square';
 
 
 const login = (props) => {
-    console.log(props)
     return(
         <div className={styles.Group}>
             <div className={styles.Background}></div>
